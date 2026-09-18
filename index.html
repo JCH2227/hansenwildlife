@@ -1,10 +1,440 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Hansen Wildlife</title>
+
+  <style>
+
+    body {
+      margin: 0;
+      background-color: #b9b58e;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #111;
+    }
+
+    /* Entire website */
+    .page {
+      width: 950px;
+      max-width: 95%;
+      margin: 0 auto;
+      background-color: #e9e4c6;
+      border: 2px solid #6f704c;
+    }
+
+    /* Top banner */
+    .banner {
+      height: 170px;
+      background-color: #1d2b1d;
+      color: white;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-align: center;
+
+      border-bottom: 5px solid #899a5b;
+    }
+
+    .banner h1 {
+      margin: 0;
+      font-size: 42px;
+      letter-spacing: 1px;
+    }
+
+    .banner p {
+      margin: 6px 0 0 0;
+      color: #c8d39a;
+      font-weight: bold;
+    }
+
+    /* Main columns */
+    .layout {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    /* LEFT SIDE MENU */
+    .sidebar {
+      width: 190px;
+      flex-shrink: 0;
+      background-color: #b8ad72;
+      min-height: 700px;
+      border-right: 1px solid #82794e;
+    }
+
+    .sidebar-title {
+      background-color: #7c8351;
+      color: white;
+      font-weight: bold;
+      padding: 7px 10px;
+      border-bottom: 1px solid #62683f;
+    }
+
+    .sidebar a {
+      display: block;
+      color: black;
+      text-decoration: none;
+      padding: 6px 10px;
+      border-bottom: 1px solid #9b9363;
+      font-size: 14px;
+    }
+
+    .sidebar a:hover {
+      background-color: #d1d7a2;
+    }
+
+    /* MAIN CONTENT */
+    .content {
+      flex: 1;
+      padding: 14px;
+      background-color: #f8f7ed;
+      min-height: 700px;
+    }
+
+    .content h2 {
+      margin-top: 0;
+    }
+
+    /* Old-school content boxes */
+    .section-box {
+      border: 2px solid #485b36;
+      margin-bottom: 15px;
+      background-color: white;
+    }
+
+    .section-heading {
+      background-color: #485b36;
+      color: white;
+      padding: 7px 10px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .section-content {
+      padding: 12px;
+      line-height: 1.5;
+    }
+
+    .section-content img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Two small feature boxes */
+    .feature-row {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 15px;
+    }
+
+    .feature {
+      width: 50%;
+      border: 2px solid #485b36;
+      background-color: white;
+    }
+
+    .feature h3 {
+      background-color: #485b36;
+      color: white;
+      margin: 0;
+      padding: 7px;
+    }
+
+    .feature-content {
+      padding: 10px;
+      line-height: 1.5;
+    }
+
+    /* Links */
+    a {
+      color: #34531f;
+    }
+
+    a:hover {
+      color: #6b7d3e;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 12px;
+      padding: 12px;
+      background-color: #b8ad72;
+      border-top: 1px solid #82794e;
+    }
+
+    /* Phone layout */
+    @media (max-width: 700px) {
+
+      .page {
+        max-width: 100%;
+        border-left: none;
+        border-right: none;
+      }
+
+      .banner {
+        height: 120px;
+      }
+
+      .banner h1 {
+        font-size: 30px;
+      }
+
+      .layout {
+        display: block;
+      }
+
+      .sidebar {
+        width: 100%;
+        min-height: 0;
+        border-right: none;
+      }
+
+      .sidebar a {
+        padding: 8px 12px;
+      }
+
+      .feature-row {
+        display: block;
+      }
+
+      .feature {
+        width: auto;
+        margin-bottom: 12px;
+      }
+
+    }
+
+  </style>
 </head>
+
+
 <body>
-  <h1>Hansen Wildlife</h1>
-  <p>Website coming soon.</p>
+
+<div class="page">
+
+
+  <!-- =====================
+       TOP BANNER
+       ===================== -->
+
+  <header class="banner">
+
+    <div>
+      <h1>Hansen Wildlife</h1>
+      <p>Wildlife Photography &amp; Field Notes</p>
+    </div>
+
+  </header>
+
+
+  <div class="layout">
+
+
+    <!-- =====================
+         LEFT SIDEBAR
+         ===================== -->
+
+    <nav class="sidebar">
+
+      <div class="sidebar-title">Main Menu</div>
+
+      <a href="index.html"><b>Home</b></a>
+      <a href="birds.html">Birds</a>
+      <a href="deer.html">Deer</a>
+      <a href="mammals.html">Mammals</a>
+      <a href="landscapes.html">Landscapes</a>
+      <a href="gear.html">Camera Gear</a>
+      <a href="fieldnotes.html">Field Notes</a>
+
+
+      <div class="sidebar-title">Photo Galleries</div>
+
+      <a href="birds.html">Bird Photography</a>
+      <a href="deer.html">Whitetail Deer</a>
+      <a href="mammals.html">Other Mammals</a>
+      <a href="landscapes.html">Landscapes</a>
+
+
+      <div class="sidebar-title">Photography</div>
+
+      <a href="gear.html">My Camera Gear</a>
+      <a href="fieldnotes.html">Field Notes</a>
+      <a href="#">Recent Photos</a>
+
+
+      <div class="sidebar-title">Site Stuff</div>
+
+      <a href="#">What's New</a>
+      <a href="#">About This Site</a>
+      <a href="#">Contact</a>
+
+    </nav>
+
+
+    <!-- =====================
+         MAIN CONTENT
+         ===================== -->
+
+    <main class="content">
+
+
+      <div class="feature-row">
+
+        <div class="feature">
+
+          <h3>Welcome</h3>
+
+          <div class="feature-content">
+
+            <p>
+              Welcome to Hansen Wildlife, a collection of wildlife
+              photographs, observations and field notes.
+            </p>
+
+            <p>
+              This site is a place for me to share photographs of birds,
+              deer, mammals, landscapes and anything else I encounter
+              outdoors.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="feature">
+
+          <h3>Latest Update</h3>
+
+          <div class="feature-content">
+
+            <p>
+              Hansen Wildlife is just getting started. New photographs,
+              galleries and field notes will be added as I spend more
+              time behind the camera.
+            </p>
+
+            <p>
+              <b>Last updated:</b> September 2026
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="section-box">
+
+        <div class="section-heading">
+          Featured Photograph
+        </div>
+
+        <div class="section-content">
+
+          <p>
+            A featured wildlife photograph will eventually go here.
+          </p>
+
+          <!-- Example:
+          <img src="photos/featured.jpg"
+               alt="Featured wildlife photograph">
+          -->
+
+        </div>
+
+      </div>
+
+
+      <div class="section-box">
+
+        <div class="section-heading">
+          Wildlife Galleries
+        </div>
+
+        <div class="section-content">
+
+          <p>
+            Browse photographs organized by subject, including birds,
+            whitetail deer, other mammals and landscapes.
+          </p>
+
+          <p>
+            <a href="birds.html">Birds &gt;&gt;</a><br>
+            <a href="deer.html">Deer &gt;&gt;</a><br>
+            <a href="mammals.html">Mammals &gt;&gt;</a><br>
+            <a href="landscapes.html">Landscapes &gt;&gt;</a>
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="section-box">
+
+        <div class="section-heading">
+          From the Field
+        </div>
+
+        <div class="section-content">
+
+          <p>
+            Field Notes will contain photographs, observations, interesting
+            sightings and notes from time spent outdoors.
+          </p>
+
+          <p>
+            <a href="fieldnotes.html">Read the Field Notes &gt;&gt;</a>
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="section-box">
+
+        <div class="section-heading">
+          Camera Gear
+        </div>
+
+        <div class="section-content">
+
+          <p>
+            A look at the cameras, lenses and other equipment I use,
+            along with what I learn as I get more familiar with wildlife
+            photography.
+          </p>
+
+          <p>
+            <a href="gear.html">View Camera Gear &gt;&gt;</a>
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </main>
+
+  </div>
+
+
+  <footer>
+    Hansen Wildlife &bull; hansenwildlife.com
+  </footer>
+
+
+</div>
+
 </body>
+
 </html>
